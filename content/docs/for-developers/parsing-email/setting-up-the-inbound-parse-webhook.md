@@ -11,7 +11,7 @@ navigation:
  show: true
 ---
 
-As you’re probably aware, SendGrid is great at sending your email, but SendGrid can also help you process email using the Inbound Parse Webhook. The Inbound Parse Webhook processes all incoming email for a domain or subdomain, parses the contents and attachments then POSTs multipart/form-data to a URL that you choose.
+Not only is SendGrid great at sending email, but it can also handle received email too. Using the Inbound Parse Webhook, all incoming email for a domain or subdomain can be processed, including contents and attachments. The webhook can then POST multipart/form-data to any desired URL.
 
 <call-out>
 
@@ -45,7 +45,7 @@ This hostname should be used exclusively to parse your incoming email.
 
 <call-out type="warning">
 
-Do not change the MX record for your domain. If you do, you will no longer receive email.
+Do not change the MX record for your domain. If you do, emails will no longer be received.
 
 </call-out>
 
@@ -95,15 +95,15 @@ If you do not check **Send Raw**, the post will be multipart/form-data with the 
 
 6. Click Save.
 
-You have just finished configuring Inbound Parse!
+Congratulations, you've just finished configuring Inbound Parse!
 
 ## 	Testing
 
-To test if everything is working, send an email from your email account to example@example.com.
+To test if everything is working, send an email from your email account to `example@example.com`.
 
 <call-out>
 
-The local-part (i.e. anything before @) can be any word or combination because all email for the domain or subdomain will be processed.
+The local-part (i.e. anything before @) can be any word or combination; all email for the domain or subdomain will be processed.
 
 </call-out>
 
@@ -111,7 +111,7 @@ You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from
 
 <call-out type="warning">
 
-Remember to direct your incoming email to your hostname (for example, example@example.com). If you do not, your incoming email will not be parsed.
+Remember to direct your incoming email to your hostname (for example, example@example.com). Otherwise incoming email will not be parsed.
 
 </call-out>
 

@@ -11,7 +11,11 @@ navigation:
   show: true
 ---
 
-If you are setting up a new account directly with SendGrid but have previously had an account through one of our partners, there are several things to keep in mind - make sure to stop sending mail until you migrate to a new, warmed up account, and make sure export data from your old account, and clean up the data described here so that you can import it into your new account.
+If you are setting up a new account directly with SendGrid but have previously had an account through one of our partners, there are several things to keep in mind: 
+
+- stop sending mail until you migrate to a new, warmed up account
+- export data from your old account
+- clean up the data described here so that you can import it into your new account
 
 ## Before you begin
 
@@ -52,7 +56,7 @@ If you are using the SendGrid API, double check your accounts [list of API keys]
 
 ## Delete teammates
 
-Teammate names have to be unique across SendGrid, so if you want to continue to use your teammate name, delete it from your original account to add it to your new account.
+Teammate names have to be unique across SendGrid. To continue to use your teammate name, delete it from your original account to add it to your new account.
 
 ## Create new subusers
 
@@ -62,12 +66,14 @@ To add subusers to your new account, go to the [subusers page](https://app.sendg
 
 ## Migrate dedicated IPs
 
-If you are using a dedicated IP, our support team can migrate your dedicated IP for you. Access support contact options by logging into https://support.sendgrid.com. Provide us with: your current and new usernames, the IP addresses, and your preferred time for the IP transfer - we can migrate IPs between 7 am and 5 pm MST on Monday through Friday.
+Our support team can migrate your dedicated IP for you if you are using a dedicated IP. Access support contact options by logging into https://support.sendgrid.com. 
+
+Please provide us with your current and new usernames, the IP addresses, and your preferred time for the IP transfer. We can migrate IPs between 7 am and 5 pm MST on Monday through Friday.
 
 Be sure to set up reverse DNS and rewarm up your transferred IP before you start sending on it in your new account. You also need to reassign it to subusers if needed.
 
 ## Download statistics and email activity
 
-On all of the statistics pages and on the email activity page, click **Export CSV** to download your statistics for your records. Your new account cannot import this data.
+On all of the statistics pages and on the email activity page, click **Export CSV** to download your statistics for your records. This data cannot be imported by your new account.
 
 
